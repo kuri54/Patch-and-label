@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    image: patch-and-label
+    volumes:
+      - '~/Desktop/work/Patch-and-label:/work/Patch-and-label'
+      - '/Volumes/HDD/tile_images:/work/Patch-and-label/input'
+    working_dir: /work/Patch-and-label
+    container_name: patch-and-label
+    tty: true
+    stdin_open: true

@@ -26,6 +26,8 @@ We have only verified activation on a Mac.
 5. Open image-sorter2_script.py in an editor and edit the contents as follows.
      - line 20: Specify the names of labels to be classified in list format.
      - line 21: Specify your own output folder name
+     - line 26: Select copy or move
+     - line 40: Select image format
      
      #### We would like to make it easier, but can't find the time to do so!
 6. Change `volumes:` in docker-compose.yml to match your environment.

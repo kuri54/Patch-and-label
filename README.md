@@ -31,7 +31,11 @@ We have only verified activation on a Mac.
      
      #### We would like to make it easier, but can't find the time to do so!
 6. Change `volumes:` in docker-compose.yml to match your environment.
-7. `docker-compose up --build`
-8. `python image-sorter2_script.py` (in container)
-9. Select the folder you want to labeling from the launched window.
+7-1. When first activated `docker-compose up --build`
+7-2. When starting up for the second time or later `docker-compose up`
+8. Select the folder you want to labeling from the launched window.
+
+If an error occurs, check the following
+1. Is XQuartz running?
+2. Is the `volumes:` setting in docker-compos.yml correct?
 

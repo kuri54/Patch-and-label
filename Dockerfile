@@ -17,4 +17,4 @@ RUN pip install -r requirements.txt
 ENV DISPLAY host.docker.internal:0.0
 RUN echo DISPLAY
 
-CMD ["/bin/bash"]
+CMD ["python", "image-sorter2_script.py"]

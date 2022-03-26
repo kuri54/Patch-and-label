@@ -37,7 +37,7 @@ We have only verified activation on a Mac.
 When starting up for the second time or later `docker-compose up`  
 8. Select the folder you want to labeling from the launched window.
 
-![スクリーンショット 2022-03-25 15 55 18](https://user-images.githubusercontent.com/40049003/160072474-927e2b3d-4f8e-446b-b669-9c5960d5d111.jpg)
+![スクリーンショット 2022-03-26 23 50 37](https://user-images.githubusercontent.com/40049003/160245002-6b03b809-e195-4bbd-b461-5a840591b2ed.jpg)
 
 <img width="350" alt="image" src="https://user-images.githubusercontent.com/40049003/160072640-4f031d09-f674-4823-8756-f35f8f94431d.png">
 

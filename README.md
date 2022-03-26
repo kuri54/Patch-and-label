@@ -20,7 +20,9 @@ We have only verified activation on a Mac.
 
 # Usage: Use Docker
 1. Install [XQuartz](https://www.xquartz.org) on Mac
-2. Open XQuartz preferences and allow connections from network clients.
+2. Open XQuartz preferences and make the following settings in the Security tab. Restart XQuartz after setting up.
+   - Authenticate connections: OFF
+   - Allow connections from network clients: ON  
 3. Clone this repository.
 4. `cd Patch-and-label`
 5. Open image-sorter2_script.py in an editor and edit the contents as follows.
@@ -40,6 +42,6 @@ When starting up for the second time or later `docker-compose up`
 <img width="350" alt="image" src="https://user-images.githubusercontent.com/40049003/160072640-4f031d09-f674-4823-8756-f35f8f94431d.png">
 
 If an error occurs, check the following
-1. Is XQuartz running?
-2. Is the `volumes:` setting in docker-compos.yml correct?
-
+1. XQuartz running?
+2. `volumes:` setting in docker-compos.yml correct?
+3. Allow full disk access for XQuartz in your MacOS preferences?

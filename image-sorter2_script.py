@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 import pandas as pd
 import tkinter as tk
 from tkinter import *
@@ -332,8 +333,9 @@ def make_folder(directory, label):
     Make folder if it doesn't already exist
     :param directory: The folder destination path
     """
-    directory = os.path.dirname(directory)
-    directory = directory + output_folder
+    # directory = os.path.dirname(directory)
+    directory = Path(directory).parents[0]
+    directory = str(directory) + output_folder
     directory = os.path.join(directory, label)
 
     if not os.path.exists(directory):

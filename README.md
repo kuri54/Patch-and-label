@@ -27,10 +27,10 @@ We have only verified activation on a Mac.
 3. Clone this repository.
 4. `cd Patch-and-label`  
 
-$\hspace{8pt}$~~5. Open image-sorter2_script.py in an editor and edit the contents as follows.~~
-$\hspace{16pt}$~~**We would like to make it easier, but can't find the time to do so!**~~  
-$\hspace{16pt}$-> **Update!!!!!**
-$\hspace{26pt}$Allowed to change settings in the yml file.
+~~5. Open image-sorter2_script.py in an editor and edit the contents as follows.~~  
+~~**We would like to make it easier, but can't find the time to do so!**~~  
+-> **Update!!!!!**
+Allowed to change settings in the yml file.
 
 5. Open `config.yml` and edit its contents.
 6. Change `volumes:` in docker-compose.yml to match your environment.  

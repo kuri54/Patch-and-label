@@ -36,7 +36,7 @@ Allowed to change settings in the yml file.
 6. Change `volumes:` in docker-compose.yml to match your environment.  
 7. `docker-compose up --build` 
 For the second and subsequent launches, run `docker-compose up`.
-However, if you change the contents of `config.yml`, you must execute `docker-compose up -build` to reflect the changes.
+However, if you change the contents of `config.yml`, you must execute `docker-compose up --build` to reflect the changes.
 8. Select the folder you want to labeling from the launched window.
 
 ![スクリーンショット 2022-03-26 23 50 37](https://user-images.githubusercontent.com/40049003/160245002-6b03b809-e195-4bbd-b461-5a840591b2ed.jpg)

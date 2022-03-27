@@ -17,6 +17,7 @@ We have only verified activation on a Mac.
 - pytz
 - six
 - easygui
+- pyyaml
 
 # Usage: Use Docker
 1. Install [XQuartz](https://www.xquartz.org) on Mac
@@ -24,17 +25,18 @@ We have only verified activation on a Mac.
    - Authenticate connections: OFF
    - Allow connections from network clients: ON  
 3. Clone this repository.
-4. `cd Patch-and-label`
-5. Open image-sorter2_script.py in an editor and edit the contents as follows.
-     - line 20: Specify the names of labels to be classified in list format.
-     - line 21: Specify your own output folder name
-     - line 26: Select copy or move
-     - line 40: Select image format
-     
-     #### We would like to make it easier, but can't find the time to do so!
+4. `cd Patch-and-label`  
+
+$\hspace{8pt}$~~5. Open image-sorter2_script.py in an editor and edit the contents as follows.~~
+$\hspace{16pt}$~~**We would like to make it easier, but can't find the time to do so!**~~  
+$\hspace{16pt}$-> **Update!!!!!**
+$\hspace{26pt}$Allowed to change settings in the yml file.
+
+5. Open `config.yml` and edit its contents.
 6. Change `volumes:` in docker-compose.yml to match your environment.  
-7. When first activated `docker-compose up --build`  
-When starting up for the second time or later `docker-compose up`  
+7. `docker-compose up --build` 
+For the second and subsequent launches, run `docker-compose up`.
+However, if you change the contents of `config.yml`, you must execute `docker-compose up -build` to reflect the changes.
 8. Select the folder you want to labeling from the launched window.
 
 ![スクリーンショット 2022-03-26 23 50 37](https://user-images.githubusercontent.com/40049003/160245002-6b03b809-e195-4bbd-b461-5a840591b2ed.jpg)

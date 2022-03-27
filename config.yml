@@ -1,0 +1,22 @@
+# the different folders into which you want to sort the images, e.g. ['cars', 'bikes', 'cats', 'horses', 'shoes']
+labels: ['Normal', 'Abnormal', 'Stacked']
+output_folder: 'labeled_images'
+
+# provide either 'copy' or 'move', depending how you want to sort the images into the new folders
+# - 'move' starts where you left off last time sorting, no 'go to #pic', works with number-buttons for labeling, no txt-file for tracking after closing GUI, saves memory
+# - 'copy' starts always at beginning, has 'go to #pic', doesn't work with number-buttons, has a txt-for tracking the labels after closing the GUI
+copy_or_move: 'copy'
+
+# Only relevant if copy_or_move = 'copy', else ignored
+# A file-path to a txt-file, that WILL be created by the script. The results of the sorting wil be stored there.
+# Don't provide a filepath to an empty file, provide to a non-existing one!
+# If you provide a path to file that already exists, than this file will be used for keeping track of the storing.
+# This means: 1st time you run this script and such a file doesn't exist the file will be created and populated,
+# 2nd time you run the same script, and you use the same df_path, the script will use the file to continue the sorting.
+
+# a selection of what file-types to be sorted, anything else will be excluded
+file_extensions: ['.jpg']
+
+# set resize to True to resize image keeping same aspect ratio
+# set resize to False to display original image
+resize: False

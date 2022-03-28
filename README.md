@@ -43,7 +43,7 @@ However, if you change the contents of `config.yml`, you must execute `docker-co
 
 <img width="350" alt="image" src="https://user-images.githubusercontent.com/40049003/160072640-4f031d09-f674-4823-8756-f35f8f94431d.png">
 
-If an error occurs, check the following
+**If an error occurs, check the following**
 1. XQuartz running?
 2. `volumes:` setting in docker-compos.yml correct?
 3. Allow full disk access for XQuartz in your MacOS preferences?
